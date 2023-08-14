@@ -37,7 +37,7 @@ const App = () => {
 
   
   return (
-    <div>
+    <div className="parent">
          <h1>Parent Component</h1>
          <label for="name">Item Name</label>
          <input type="text"name="name"onChange={()=>{
@@ -46,7 +46,7 @@ const App = () => {
          <label for="quantity">Item Price</label>
          <input type="text"name="quantity"onChange={()=>{
           clicked2(event.target.value)}}></input>
-         <button onClick={()=>{
+         <button id="itemName"onClick={()=>{
            Changefn()
          }}>add item</button>
          <Button store={store} handlingfn={handlingfn}/>

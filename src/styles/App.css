@@ -1,5 +1,13 @@
-.child{
-    display: flex;
-    column-gap: 15px;
-    padding:10px;
+.parent{
+    background-color: greenyellow;
 }
+
+.child li>li{
+    width:fit-content;
+    display: contents;
+}
+#itemName{
+    color: black;
+}
+
+

@@ -7,17 +7,19 @@ const Button=(props)=>{
         props.handlingfn(value);
     }
     return(
-        <div>
+        <>
+            <ul>
             {
             arrayprops.map((item) => (
-            <div className="child">
-            <p>{item}</p>
+            <div className="child li">
+            <li>{item}</li>
             <button onClick={()=>{
                 removefn(item)
             }}>remove</button>
             </div>
         ))}
-        </div>
+        </ul>
+        </>
     )
 }
 
