@@ -46,7 +46,7 @@ const App = () => {
          <label for="quantity">Item Price</label>
          <input type="text"name="quantity"onChange={()=>{
           clicked2(event.target.value)}}></input>
-         <button id="itemPrice"onClick={()=>{
+         <button id="itemName"onClick={()=>{
            Changefn()
          }}>add item</button>
          <Button store={store} handlingfn={handlingfn}/>
